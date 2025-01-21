@@ -1,0 +1,23 @@
+mlazoy@mlazoy-vm:~$ ldd -v x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc
+	linux-vdso.so.1 (0x00007fff67d78000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007d9ae8400000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007d9ae8799000)
+
+	Version information:
+	x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc:
+		ld-linux-x86-64.so.2 (GLIBC_2.3) => /lib64/ld-linux-x86-64.so.2
+		libc.so.6 (GLIBC_2.3) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.15) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.7) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.14) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.32) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.33) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.4) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.34) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.11) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.2.5) => /lib/x86_64-linux-gnu/libc.so.6
+		libc.so.6 (GLIBC_2.3.4) => /lib/x86_64-linux-gnu/libc.so.6
+	/lib/x86_64-linux-gnu/libc.so.6:
+		ld-linux-x86-64.so.2 (GLIBC_2.2.5) => /lib64/ld-linux-x86-64.so.2
+		ld-linux-x86-64.so.2 (GLIBC_2.3) => /lib64/ld-linux-x86-64.so.2
+		ld-linux-x86-64.so.2 (GLIBC_PRIVATE) => /lib64/ld-linux-x86-64.so.2

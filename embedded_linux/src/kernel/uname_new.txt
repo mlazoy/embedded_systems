@@ -1,0 +1,2 @@
+root@debian-armhf:~# uname -a
+Linux debian-armhf 3.16.84 #7 SMP Sun Jan 12 11:29:09 EET 2025 armv7l GNU/Linux

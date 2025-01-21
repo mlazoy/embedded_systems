@@ -1,0 +1,2 @@
+root@6262902d3b2f:/gem5# cat m5out/stats.txt | grep system.cpu.numCycles
+system.cpu.numCycles                         59723234      # Number of cpu cycles simulated (Cycle)

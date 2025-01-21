@@ -1,0 +1,4 @@
+mlazoy@mlazoy-vm:~$ scp -P 22223 -r root@localhost:/usr/src/linux-source-3.16.tar.xz ./
+root@localhost's password: 
+linux-source-3.16.tar.xz                      100%   78MB   1.0MB/s   01:17 
+mlazoy@mlazoy-vm:~$ tar -xJf linux-source-3.16.tar.xz

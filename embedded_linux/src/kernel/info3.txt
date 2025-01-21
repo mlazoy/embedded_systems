@@ -1,0 +1,23 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16$ dpkg -I ../linux-image-3.16.84_3.16.84-6_armhf.deb
+ new Debian package, version 2.0.
+ size 12572118 bytes: control archive=28880 bytes.
+     463 bytes,    14 lines      control              
+   98433 bytes,  1121 lines      md5sums              
+     285 bytes,    12 lines   *  postinst             #!/bin/sh
+     281 bytes,    12 lines   *  postrm               #!/bin/sh
+     283 bytes,    12 lines   *  preinst              #!/bin/sh
+     279 bytes,    12 lines   *  prerm                #!/bin/sh
+ Package: linux-image-3.16.84
+ Source: linux-upstream
+ Version: 3.16.84-6
+ Architecture: armhf
+ Maintainer: Anonymous <root@mlazoy-vm>
+ Installed-Size: 40357
+ Suggests: linux-firmware-image-3.16.84
+ Provides: linux-image, linux-image-2.6, linux-modules-3.16.84
+ Section: kernel
+ Priority: optional
+ Homepage: http://www.kernel.org/
+ Description: Linux kernel, version 3.16.84
+  This package contains the Linux kernel, modules and corresponding other
+  files, version: 3.16.84.

@@ -1,0 +1,2 @@
+root@debian-armhf:/home/user# ./phods_crosstool.out 
+./phods_crosstool.out: /lib/arm-linux-gnueabihf/libc.so.6: version `GLIBC_2.34' not found (required by ./phods_crosstool.out)

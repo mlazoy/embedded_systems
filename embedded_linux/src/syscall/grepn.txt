@@ -1,0 +1,7 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16$ grep -n "core-y" Makefile
+570:core-y		:= usr/
+859:core-y		+= kernel/ mm/ fs/ ipc/ security/ crypto/ block/
+862:		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
+871:core-y		:= $(patsubst %/, %/built-in.o, $(core-y))
+880:export KBUILD_VMLINUX_MAIN := $(core-y) $(libs-y) $(drivers-y) $(net-y)
+mlazoy@mlazoy-vm:~/linux-source-3.16$ vi +859 Makefile

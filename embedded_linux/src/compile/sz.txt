@@ -1,0 +1,3 @@
+mlazoy@mlazoy-vm:~$ ls -al | grep phods
+-rwxrwxr-x  1 mlazoy mlazoy  15088 Ιαν  11 12:57 phods_crosstool.out
+-rwxrwxr-x  1 mlazoy mlazoy   8878 Ιαν  11 13:18 phods_linaro.out

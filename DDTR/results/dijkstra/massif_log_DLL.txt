@@ -1,0 +1,300 @@
+--------------------------------------------------------------------------------
+Command:            ./dijsktra_DLL ./src/dijsktra/input.dat
+Massif arguments:   (none)
+ms_print arguments: massif.out.45651
+--------------------------------------------------------------------------------
+
+
+    MB
+1.148^                                                                       #
+     |                                                                    :::#
+     |                                                                 :@@: :#
+     |                                                              ::::@ : :#
+     |                                                          ::::: ::@ : :#
+     |                                                       @@@:: :: ::@ : :#
+     |                                                    :::@ @:: :: ::@ : :#
+     |                                                 ::::::@ @:: :: ::@ : :#
+     |                                             :::::: :::@ @:: :: ::@ : :#
+     |                                          ::@: :::: :::@ @:: :: ::@ : :#
+     |                                       @::: @: :::: :::@ @:: :: ::@ : :#
+     |                                     :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                                ::::::@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                             ::::: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                          @:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                       :::@:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                    ::::: @:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |                ::::: ::: @:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |            ::@@: : : ::: @:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+     |          ::::@ : : : ::: @:::: :: : :@@::: @: :::: :::@ @:: :: ::@ : :#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   70.69
+
+Number of snapshots: 54
+ Detailed snapshots: [7, 15, 24, 25, 29, 38, 39, 46, 49, 53 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        141,660            4,864            4,808            56            0
+  2      6,903,604            4,904            4,832            72            0
+  3      8,960,551           47,344           30,296        17,048            0
+  4     11,031,225           89,656           56,088        33,568            0
+  5     12,850,230          122,016           75,504        46,512            0
+  6     14,319,991          151,616           93,264        58,352            0
+  7     15,434,302          169,616          104,064        65,552            0
+61.35% (104,064B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->28.96% (49,128B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->28.92% (49,056B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->28.92% (49,056B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (72B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->28.95% (49,104B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->28.95% (49,104B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->28.91% (49,032B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->28.91% (49,032B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (72B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->03.02% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->03.02% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->03.02% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->02.41% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->02.41% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->02.41% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->02.41% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->02.41% (4,096B) 0x401820: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|     |         
+|     ->00.60% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.42% (712B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8     17,128,525          192,496          117,792        74,704            0
+  9     19,171,928          237,056          144,528        92,528            0
+ 10     20,643,532          254,736          155,136        99,600            0
+ 11     21,533,620          267,456          162,768       104,688            0
+ 12     22,782,137          299,296          181,872       117,424            0
+ 13     24,426,855          321,056          194,928       126,128            0
+ 14     25,509,457          355,776          215,760       140,016            0
+ 15     26,850,528          366,656          222,288       144,368            0
+60.63% (222,288B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.52% (108,240B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.48% (108,096B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.48% (108,096B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.51% (108,216B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.51% (108,216B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.48% (108,072B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.48% (108,072B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (144B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->01.40% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.40% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->01.40% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->01.12% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->01.12% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->01.12% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->01.12% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->01.12% (4,096B) 0x401820: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|     |         
+|     ->00.28% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->00.19% (712B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 16     27,915,003          380,896          230,832       150,064            0
+ 17     29,058,199          413,856          250,608       163,248            0
+ 18     30,477,203          430,096          260,352       169,744            0
+ 19     31,842,398          469,776          284,160       185,616            0
+ 20     33,565,423          484,656          293,088       191,568            0
+ 21     34,749,275          522,176          315,600       206,576            0
+ 22     36,687,379          540,336          326,496       213,840            0
+ 23     38,550,261          584,816          353,184       231,632            0
+ 24     39,447,995          591,376          357,120       234,256            0
+60.39% (357,120B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.70% (175,656B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.66% (175,416B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.66% (175,416B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.70% (175,632B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.70% (175,632B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.66% (175,392B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.66% (175,392B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (240B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.99% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 25     40,921,710          633,376          382,320       251,056            0
+60.36% (382,320B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.72% (188,256B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.68% (187,992B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.68% (187,992B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (264B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.72% (188,232B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.72% (188,232B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.68% (187,968B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.68% (187,968B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (264B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.92% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 26     41,787,297          639,776          386,160       253,616            0
+ 27     43,114,516          653,296          394,272       259,024            0
+ 28     44,218,351          687,056          414,528       272,528            0
+ 29     46,043,930          707,056          426,528       280,528            0
+60.32% (426,528B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.75% (210,360B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.71% (210,072B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.71% (210,072B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (288B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.75% (210,336B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.75% (210,336B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.71% (210,048B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.71% (210,048B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (288B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.82% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 30     47,076,563          732,656          441,888       290,768            0
+ 31     48,675,500          760,976          458,880       302,096            0
+ 32     50,242,224          780,976          470,880       310,096            0
+ 33     51,213,400          815,856          491,808       324,048            0
+ 34     52,382,164          825,056          497,328       327,728            0
+ 35     53,892,157          843,456          508,368       335,088            0
+ 36     54,791,562          872,096          525,552       346,544            0
+ 37     56,445,005          893,776          538,560       355,216            0
+ 38     57,476,109          907,936          547,056       360,880            0
+60.25% (547,056B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.81% (270,624B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.77% (270,264B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.77% (270,264B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.80% (270,600B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.80% (270,600B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.76% (270,240B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.76% (270,240B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (360B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.64% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 39     59,204,660          946,096          569,952       376,144            0
+60.24% (569,952B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.81% (282,072B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.77% (281,688B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.77% (281,688B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (384B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.81% (282,048B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.81% (282,048B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.77% (281,664B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.77% (281,664B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (384B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.62% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 40     60,397,220          969,536          584,016       385,520            0
+ 41     61,588,364          992,336          597,696       394,640            0
+ 42     63,425,888        1,015,856          611,808       404,048            0
+ 43     64,788,677        1,055,936          635,856       420,080            0
+ 44     66,391,574        1,071,696          645,312       426,384            0
+ 45     67,407,835        1,086,416          654,144       432,272            0
+ 46     68,780,017        1,121,536          675,216       446,320            0
+60.20% (675,216B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.84% (334,704B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.80% (334,248B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.80% (334,248B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (456B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.84% (334,680B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.84% (334,680B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.80% (334,224B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.80% (334,224B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (456B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.52% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 47     70,879,571        1,146,656          690,288       456,368            0
+ 48     72,436,564        1,182,336          711,696       470,640            0
+ 49     73,554,225        1,196,256          720,048       476,208            0
+60.19% (720,048B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.85% (357,120B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.81% (356,640B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.81% (356,640B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.85% (357,096B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.85% (357,096B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.81% (356,616B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.81% (356,616B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.49% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 50     73,714,043        1,199,456          721,968       477,488            0
+ 51     73,861,018        1,200,496          722,592       477,904            0
+ 52     74,009,407        1,202,496          723,792       478,704            0
+ 53     74,122,663        1,203,896          724,632       479,264            0
+60.19% (724,632B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.85% (359,400B) 0x401363: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.81% (358,920B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| | ->29.81% (358,920B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| |   
+| ->00.04% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->29.85% (359,400B) 0x402C52: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+| ->29.85% (359,400B) 0x4013D8: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   ->29.81% (358,920B) 0x4016C8: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   | ->29.81% (358,920B) 0x4018B1: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DLL)
+|   |   
+|   ->00.04% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->00.48% (5,832B) in 1+ places, all below ms_print's threshold (01.00%)
+

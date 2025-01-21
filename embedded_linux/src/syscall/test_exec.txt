@@ -1,0 +1,16 @@
+root@debian-armhf:/home/user# gcc -Wall -std=gnu11 -o greet.o test_greet.c
+root@debian-armhf:/home/user# ./greet.o 
+Calling custom system call sys_greet...
+sys_greet return status: 0
+root@debian-armhf:/home/user# dmesg | tail
+[   85.753633] RPC: Registered named UNIX socket transport module.
+[   85.758023] RPC: Registered udp transport module.
+[   85.765045] RPC: Registered tcp transport module.
+[   85.768947] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   85.930012] FS-Cache: Loaded
+[   86.215643] FS-Cache: Netfs 'nfs' registered for caching
+[   86.608906] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[  242.211177] Greeting from kernel and team 35
+[  352.542977] Greeting from kernel and team 35
+[  409.429371] Greeting from kernel and team 35
+root@debian-armhf:/home/user# 

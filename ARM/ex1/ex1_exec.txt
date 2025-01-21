@@ -1,0 +1,21 @@
+root@debian-armel:/home/user# gcc ex1.s -o ex1
+root@debian-armel:/home/user# ./ex1
+Input a string up to 32-bytes long
+Hello 42!
+Transformig input string...
+hELLO 97!
+
+Input a string up to 32-bytes long
+Team 35
+Transformig input string...
+tEAM 80
+
+Input a string up to 32-bytes long
+THIS IS A TEST OF a very long string to check overflow of buffer...
+Transformig input string...
+this is a test of A VERY LONG ST
+
+Input a string up to 32-bytes long
+q
+Exiting...
+root@debian-armel:/home/user# 

@@ -1,0 +1,18 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16$ dpkg -I ../linux-libc-dev_3.16.84-6_armhf.deb
+ new Debian package, version 2.0.
+ size 770966 bytes: control archive=18508 bytes.
+     462 bytes,    13 lines      control              
+   50703 bytes,   773 lines      md5sums              
+ Package: linux-libc-dev
+ Source: linux-upstream
+ Version: 3.16.84-6
+ Architecture: armhf
+ Maintainer: Anonymous <root@mlazoy-vm>
+ Installed-Size: 3743
+ Provides: linux-kernel-headers
+ Section: devel
+ Priority: optional
+ Homepage: http://www.kernel.org/
+ Description: Linux support headers for userspace development
+  This package provides userspaces headers from the Linux kernel.  These headers
+  are used by the installed headers for GNU glibc and other system libraries.

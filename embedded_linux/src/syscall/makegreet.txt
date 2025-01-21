@@ -1,0 +1,2 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16$ cat greet/Makefile 
+obj-y := greet.o

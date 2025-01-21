@@ -1,0 +1,3 @@
+checking for makeinfo... no
+configure: error: missing required tool: makeinfo
+mlazoy@mlazoy-vm:~/crosstool-ng$ sudo apt install texinfo

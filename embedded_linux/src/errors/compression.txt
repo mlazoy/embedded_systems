@@ -1,0 +1,6 @@
+root@debian-armhf:~# dpkg -i /bootable/linux-headers-3.16.84_3.16.84-6_armhf.deb 
+dpkg-deb: error: archive '/bootable/linux-headers-3.16.84_3.16.84-6_armhf.deb' contains not understood data member control.tar.zst, giving up
+dpkg: error processing /bootable/linux-headers-3.16.84_3.16.84-6_armhf.deb (--install):
+ subprocess dpkg-deb --control returned error exit status 2
+Errors were encountered while processing:
+ /bootable/linux-headers-3.16.84_3.16.84-6_armhf.deb

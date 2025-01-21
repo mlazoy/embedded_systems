@@ -1,0 +1,3 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16/scripts/dtc$ sed -i 's/YYLTYPE yylloc;/extern YYLTYPE yylloc;/g' dtc-lexer.lex.c_shipped
+mlazoy@mlazoy-vm:~/linux-source-3.16/scripts/dtc$ cat dtc-lexer.lex.c_shipped  | grep YYLTYPE
+extern YYLTYPE yylloc;

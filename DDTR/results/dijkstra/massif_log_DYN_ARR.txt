@@ -1,0 +1,193 @@
+--------------------------------------------------------------------------------
+Command:            ./dijsktra_DYN_ARR ./src/dijsktra/input.dat
+Massif arguments:   (none)
+ms_print arguments: massif.out.45974
+--------------------------------------------------------------------------------
+
+
+    KB
+594.6^                                                                       #
+     |                                                                     ::#
+     |                                                                 ::::::#
+     |                                                              :::: : ::#
+     |                                                          :::::: : : ::#
+     |                                                       ::@: : :: : : ::#
+     |                                                    :::::@: : :: : : ::#
+     |                                                :::::: ::@: : :: : : ::#
+     |                                            :::::: ::: ::@: : :: : : ::#
+     |                                          ::: :::: ::: ::@: : :: : : ::#
+     |                                      ::::::: :::: ::: ::@: : :: : : ::#
+     |                                  ::::::: ::: :::: ::: ::@: : :: : : ::#
+     |                               ::::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |                          :::::: ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |                        ::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |                    ::::::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |                 :::: : ::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |              :@@:: : : ::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |          :::::@ :: : : ::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+     |       :::: :::@ :: : : ::: :: : ::: :::: ::: :::: ::: ::@: : :: : : ::#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   102.5
+
+Number of snapshots: 61
+ Detailed snapshots: [3, 11, 41, 57, 60 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        140,306            4,736            4,688            48            0
+  2      6,902,250            4,776            4,712            64            0
+  3      7,089,655           21,816           17,376         4,440            0
+79.65% (17,376B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->30.14% (6,576B) 0x401293: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->30.03% (6,552B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| | ->30.03% (6,552B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| |   
+| ->00.11% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->28.16% (6,144B) 0x401985: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->28.16% (6,144B) 0x401308: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|   ->28.16% (6,144B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|     ->28.16% (6,144B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|       
+->18.78% (4,096B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->18.78% (4,096B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->18.78% (4,096B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->18.78% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|       ->18.78% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|         ->18.78% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|           ->18.78% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|             ->18.78% (4,096B) 0x40174D: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|               
+->02.16% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+| ->02.16% (472B) 0x401718: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|   
+->00.40% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  4      8,642,332           24,200           17,992         6,208            0
+  5     10,624,017           31,680           22,480         9,200            0
+  6     13,000,225           56,192           37,592        18,600            0
+  7     15,040,792           62,792           41,552        21,240            0
+  8     17,944,581           81,592           52,832        28,760            0
+  9     19,454,829           91,312           58,664        32,648            0
+ 10     21,835,549           98,392           62,912        35,480            0
+ 11     23,395,183          107,912           68,624        39,288            0
+63.59% (68,624B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->54.53% (58,848B) 0x401293: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->54.47% (58,776B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| | ->54.47% (58,776B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| |   
+| ->00.07% (72B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->04.74% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->04.74% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->04.74% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->03.80% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->03.80% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->03.80% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->03.80% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->03.80% (4,096B) 0x40174D: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|     |         
+|     ->00.95% (1,024B) in 1+ places, all below ms_print's threshold (01.00%)
+|     
+->03.80% (4,096B) 0x401985: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->03.80% (4,096B) 0x401308: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|   ->03.80% (4,096B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|     ->03.80% (4,096B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+|       
+->00.52% (560B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 12     25,858,991          127,272           80,240        47,032            0
+ 13     28,075,850          136,112           85,544        50,568            0
+ 14     31,034,540          156,912           98,024        58,888            0
+ 15     33,665,547          177,752          110,528        67,224            0
+ 16     36,150,120          187,552          116,408        71,144            0
+ 17     37,921,710          195,792          121,352        74,440            0
+ 18     39,785,678          213,632          132,056        81,576            0
+ 19     42,790,539          225,072          138,920        86,152            0
+ 20     44,120,477          241,792          148,952        92,840            0
+ 21     46,299,328          247,192          152,192        95,000            0
+ 22     49,275,977          270,272          166,040       104,232            0
+ 23     51,243,682          275,992          169,472       106,520            0
+ 24     53,654,526          295,872          181,400       114,472            0
+ 25     55,609,390          301,272          184,640       116,632            0
+ 26     57,005,193          307,992          188,672       119,320            0
+ 27     59,056,049          325,272          199,040       126,232            0
+ 28     60,733,110          330,472          202,160       128,312            0
+ 29     62,863,503          350,152          213,968       136,184            0
+ 30     64,613,818          354,832          216,776       138,056            0
+ 31     67,019,823          366,872          224,000       142,872            0
+ 32     68,896,944          383,272          233,840       149,432            0
+ 33     70,668,695          389,392          237,512       151,880            0
+ 34     72,340,690          397,952          242,648       155,304            0
+ 35     74,076,797          415,632          253,256       162,376            0
+ 36     76,264,207          421,392          256,712       164,680            0
+ 37     77,770,900          437,672          266,480       171,192            0
+ 38     79,541,262          444,272          270,440       173,832            0
+ 39     82,619,657          459,192          279,392       179,800            0
+ 40     84,692,108          477,112          290,144       186,968            0
+ 41     86,162,454          481,152          292,568       188,584            0
+60.81% (292,568B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->58.77% (282,792B) 0x401293: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->58.69% (282,408B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| | ->58.69% (282,408B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| |   
+| ->00.08% (384B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.06% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->01.06% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->01.06% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->01.06% (5,120B) in 2 places, all below massif's threshold (1.00%)
+|       
+->00.97% (4,656B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 42     87,945,995          500,712          304,304       196,408            0
+ 43     90,399,405          507,112          308,144       198,968            0
+ 44     93,631,444          534,632          324,656       209,976            0
+ 45     95,512,776          539,472          327,560       211,912            0
+ 46     98,534,669          563,472          341,960       221,512            0
+ 47    101,152,694          572,832          347,576       225,256            0
+ 48    103,380,499          593,472          359,960       233,512            0
+ 49    105,920,805          600,192          363,992       236,200            0
+ 50    106,083,639          601,152          364,568       236,584            0
+ 51    106,239,945          601,792          364,952       236,840            0
+ 52    106,385,887          602,792          365,552       237,240            0
+ 53    106,533,828          603,592          366,032       237,560            0
+ 54    106,700,105          603,952          366,248       237,704            0
+ 55    106,840,990          604,712          366,704       238,008            0
+ 56    106,985,539          606,032          367,496       238,536            0
+ 57    107,134,446          606,792          367,952       238,840            0
+60.64% (367,952B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->59.03% (358,176B) 0x401293: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->58.95% (357,696B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| | ->58.95% (357,696B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| |   
+| ->00.08% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.61% (9,776B) in 5 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 58    107,278,917          607,192          368,192       239,000            0
+ 59    107,429,879          608,352          368,888       239,464            0
+ 60    107,505,783          608,832          369,176       239,656            0
+60.64% (369,176B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->59.03% (359,400B) 0x401293: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| ->58.95% (358,920B) 0x4015F5: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| | ->58.95% (358,920B) 0x4017DE: main (in /home/stavros/embedded-systems/Exercise 2/dijsktra_DYN_ARR)
+| |   
+| ->00.08% (480B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->01.61% (9,776B) in 5 places, all below massif's threshold (1.00%)
+  

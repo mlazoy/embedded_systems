@@ -1,0 +1,749 @@
+--------------------------------------------------------------------------------
+Command:            ./drr_SLL_CL_DLL_PK
+Massif arguments:   (none)
+ms_print arguments: massif.out.65282
+--------------------------------------------------------------------------------
+
+
+    KB
+980.3^                                                                       #
+     |                                                                      @#
+     |                                              @                     @:@#
+     |                                              @:                 :::@:@#
+     |                                             @@:          @    :@:::@:@#
+     |                                             @@::    :    @:::::@:::@:@#
+     |                                            @@@:::  @:::::@:::::@:::@:@#
+     |                                           @@@@:::  @:::::@:::::@:::@:@#
+     |                                          @@@@@:::::@:::::@:::::@:::@:@#
+     |                                         @@@@@@:::::@:::::@:::::@:::@:@#
+     |                                         @@@@@@:::::@:::::@:::::@:::@:@#
+     |                                  @  ::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |                                @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |                      ::     :::@:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |                      :::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |                   @@::::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |              @ :::@ ::::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |    :  :@  :::@::::@ ::::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |    ::::@:::::@::::@ ::::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+     |   :::::@:::::@::::@ ::::::@::: @:@::::::@@@@@@:::::@:::::@:::::@:::@:@#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   36.37
+
+Number of snapshots: 97
+ Detailed snapshots: [1, 9, 15, 21, 28, 32, 35, 43, 44, 45, 46, 48, 50, 51, 52, 62, 72, 82, 88, 92, 94, 95, 96 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        475,212           20,704           16,892         3,812            0
+81.59% (16,892B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->60.51% (12,528B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->60.51% (12,528B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->60.51% (12,528B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->60.51% (12,528B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->07.77% (1,608B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->06.96% (1,440B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->06.96% (1,440B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.81% (168B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->06.72% (1,392B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->06.72% (1,392B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->04.48% (928B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->04.48% (928B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->04.48% (928B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->02.11% (436B) in 5 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  2        924,141           37,352           28,756         8,596            0
+  3      1,258,310           41,576           31,944         9,632            0
+  4      1,763,855           88,128           61,876        26,252            0
+  5      2,414,369          175,880          110,692        65,188            0
+  6      2,742,551          126,208           82,156        44,052            0
+  7      3,281,356          104,192           68,244        35,948            0
+  8      3,869,869          192,088          114,972        77,116            0
+  9      4,520,403          151,592           93,156        58,436            0
+61.45% (93,156B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->22.94% (34,776B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->22.94% (34,776B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->22.94% (34,776B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->22.94% (34,776B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->20.97% (31,788B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->20.97% (31,788B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->13.14% (19,920B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->12.95% (19,632B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->12.95% (19,632B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.19% (288B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.55% (3,864B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.55% (3,864B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.70% (2,576B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.70% (2,576B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.70% (2,576B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.15% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10      5,196,221          129,320           82,824        46,496            0
+ 11      5,669,404          144,440           93,500        50,940            0
+ 12      6,095,033          160,144          106,180        53,964            0
+ 13      6,770,313          180,472          120,560        59,912            0
+ 14      7,162,776          184,064          123,708        60,356            0
+ 15      7,506,312          235,640          151,284        84,356            0
+64.20% (151,284B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.53% (74,304B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->31.53% (74,304B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->31.53% (74,304B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->31.53% (74,304B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->15.48% (36,468B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->15.48% (36,468B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->11.25% (26,520B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->11.01% (25,944B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->11.01% (25,944B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.24% (576B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.50% (8,256B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.50% (8,256B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.34% (5,504B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.34% (5,504B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.34% (5,504B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.10% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 16      8,234,337          196,016          132,352        63,664            0
+ 17      8,703,795          207,456          137,784        69,672            0
+ 18      9,325,866          224,424          147,676        76,748            0
+ 19      9,639,065          229,504          150,836        78,668            0
+ 20     10,186,587          247,296          165,224        82,072            0
+ 21     10,587,870          296,856          195,592       101,264            0
+65.89% (195,592B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.80% (106,272B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->35.80% (106,272B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->35.80% (106,272B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->35.80% (106,272B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->14.39% (42,720B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->14.39% (42,720B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->08.99% (26,688B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->08.73% (25,920B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->08.73% (25,920B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.26% (768B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.98% (11,808B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.98% (11,808B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.65% (7,872B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.65% (7,872B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.65% (7,872B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.08% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     11,131,766          269,032          179,876        89,156            0
+ 23     11,828,323          364,960          233,680       131,280            0
+ 24     12,301,129          355,424          227,584       127,840            0
+ 25     12,963,901          325,544          208,600       116,944            0
+ 26     13,626,791          325,552          208,528       117,024            0
+ 27     14,157,143          341,256          216,624       124,632            0
+ 28     14,687,143          349,048          220,480       128,568            0
+63.17% (220,480B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.34% (119,880B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->34.34% (119,880B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->34.34% (119,880B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->34.34% (119,880B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.13% (59,808B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.13% (59,808B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->05.26% (18,360B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->05.01% (17,472B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->05.01% (17,472B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.25% (888B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.82% (13,320B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.82% (13,320B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.54% (8,880B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.54% (8,880B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.54% (8,880B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.07% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 29     15,217,472          345,112          220,260       124,852            0
+ 30     15,747,881          379,192          238,960       140,232            0
+ 31     16,353,858          376,088          240,248       135,840            0
+ 32     17,034,627          421,176          267,844       153,332            0
+63.59% (267,844B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.54% (141,264B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->33.54% (141,264B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->33.54% (141,264B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->33.54% (141,264B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->16.42% (69,156B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.42% (69,156B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->07.37% (31,032B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->07.12% (30,000B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->07.12% (30,000B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.25% (1,032B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.73% (15,696B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.73% (15,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.48% (10,464B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.48% (10,464B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.48% (10,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.06% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33     17,489,879          437,720          276,740       160,980            0
+ 34     17,905,780          428,568          268,464       160,104            0
+ 35     18,255,505          480,000          297,340       182,660            0
+61.95% (297,340B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->29.57% (141,912B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->29.57% (141,912B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->29.57% (141,912B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->29.57% (141,912B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.48% (83,916B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.48% (83,916B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->09.38% (45,000B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->09.16% (43,968B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->09.16% (43,968B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.21% (1,032B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.29% (15,768B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.29% (15,768B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.19% (10,512B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.19% (10,512B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.19% (10,512B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.05% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 36     18,671,516          417,616          261,364       156,252            0
+ 37     19,087,249          440,088          273,700       166,388            0
+ 38     19,711,142          450,480          284,280       166,200            0
+ 39     20,127,277          456,704          288,940       167,764            0
+ 40     20,543,142          481,176          307,344       173,832            0
+ 41     21,007,393          490,584          314,584       176,000            0
+ 42     21,406,484          494,904          317,688       177,216            0
+ 43     22,124,293          557,912          358,352       199,560            0
+64.23% (358,352B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->35.00% (195,264B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->35.00% (195,264B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->35.00% (195,264B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->35.00% (195,264B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->16.02% (89,352B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.02% (89,352B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->06.69% (37,320B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->06.43% (35,856B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->06.43% (35,856B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.26% (1,464B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.89% (21,696B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.89% (21,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.59% (14,464B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.59% (14,464B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.59% (14,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.05% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 44     22,553,593          626,536          396,644       229,892            0
+63.31% (396,644B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.17% (195,264B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->31.17% (195,264B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->31.17% (195,264B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->31.17% (195,264B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->16.36% (102,516B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.36% (102,516B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->09.97% (62,472B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->09.74% (61,032B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->09.74% (61,032B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.23% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.46% (21,696B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.46% (21,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.31% (14,464B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.31% (14,464B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.31% (14,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.04% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 45     22,933,653          679,608          426,188       253,420            0
+62.71% (426,188B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->28.73% (195,264B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->28.73% (195,264B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->28.73% (195,264B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->28.73% (195,264B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->16.59% (112,764B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.59% (112,764B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->12.03% (81,768B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->11.82% (80,328B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->11.82% (80,328B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.21% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.19% (21,696B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.19% (21,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.13% (14,464B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.13% (14,464B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.13% (14,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 46     23,360,807          744,008          462,104       281,904            0
+62.11% (462,104B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->26.24% (195,264B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->26.24% (195,264B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->26.24% (195,264B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->26.24% (195,264B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->16.82% (125,136B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.82% (125,136B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->14.15% (105,312B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->13.96% (103,872B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->13.96% (103,872B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.19% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.92% (21,696B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.92% (21,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.94% (14,464B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.94% (14,464B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.94% (14,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 47     23,851,605          804,520          495,868       308,652            0
+ 48     24,172,168          848,728          520,300       328,428            0
+61.30% (520,300B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->23.06% (195,696B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->23.06% (195,696B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->23.06% (195,696B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->23.06% (195,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.15% (145,548B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.15% (145,548B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->16.80% (142,584B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->16.63% (141,144B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->16.63% (141,144B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.17% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.56% (21,744B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.56% (21,744B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.71% (14,496B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.71% (14,496B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.71% (14,496B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 49     24,380,018          871,232          532,504       338,728            0
+ 50     24,392,214          872,960          533,476       339,484            0
+61.11% (533,476B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->22.42% (195,696B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->22.42% (195,696B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->22.42% (195,696B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->22.42% (195,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.27% (150,768B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.11% (149,328B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->17.11% (149,328B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.16% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.24% (150,540B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.24% (150,540B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.49% (21,744B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.49% (21,744B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.66% (14,496B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.66% (14,496B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.66% (14,496B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 51     24,645,062          902,120          549,424       352,696            0
+60.90% (549,424B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->21.69% (195,696B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->21.69% (195,696B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->21.69% (195,696B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->21.69% (195,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.82% (160,800B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.67% (159,360B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->17.67% (159,360B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.16% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.34% (156,456B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.34% (156,456B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.41% (21,744B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.41% (21,744B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.61% (14,496B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.61% (14,496B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.61% (14,496B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 52     24,794,948          914,576          555,976       358,600            0
+60.79% (555,976B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->21.40% (195,696B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->21.40% (195,696B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->21.40% (195,696B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->21.40% (195,696B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.99% (164,568B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.84% (163,128B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->17.84% (163,128B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.16% (1,440B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.41% (159,240B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.41% (159,240B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.38% (21,744B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.38% (21,744B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.58% (14,496B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.58% (14,496B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.58% (14,496B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 53     25,108,149          869,496          529,516       339,980            0
+ 54     25,421,466          824,944          503,332       321,612            0
+ 55     25,734,703          780,264          477,388       302,876            0
+ 56     26,048,079          736,376          451,936       284,440            0
+ 57     26,361,561          691,672          425,924       265,748            0
+ 58     26,675,008          643,584          398,576       245,008            0
+ 59     27,005,025          627,248          389,660       237,588            0
+ 60     27,318,395          633,232          394,420       238,812            0
+ 61     27,631,647          670,552          412,912       257,640            0
+ 62     27,944,989          708,032          429,136       278,896            0
+60.61% (429,136B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->28.74% (203,472B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->28.74% (203,472B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->28.74% (203,472B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->28.74% (203,472B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->20.60% (145,824B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->20.60% (145,824B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->05.92% (41,928B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->05.71% (40,440B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->05.71% (40,440B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.21% (1,488B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.19% (22,608B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.19% (22,608B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.13% (15,072B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.13% (15,072B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.13% (15,072B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 63     28,258,300          761,512          452,896       308,616            0
+ 64     28,571,625          772,832          456,688       316,144            0
+ 65     28,884,885          718,352          429,448       288,904            0
+ 66     29,198,266          677,272          411,216       266,056            0
+ 67     29,511,731          704,712          424,348       280,364            0
+ 68     29,824,992          697,040          419,564       277,476            0
+ 69     30,138,366          715,568          427,608       287,960            0
+ 70     30,451,596          715,632          429,600       286,032            0
+ 71     30,764,936          770,832          455,040       315,792            0
+ 72     31,078,165          825,616          481,428       344,188            0
+58.31% (481,428B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->25.95% (214,272B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->25.95% (214,272B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->25.95% (214,272B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->25.95% (214,272B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->20.59% (170,028B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->20.59% (170,028B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->06.93% (57,216B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->06.75% (55,704B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->06.75% (55,704B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.18% (1,512B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.88% (23,808B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.88% (23,808B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->01.92% (15,872B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->01.92% (15,872B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->01.92% (15,872B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 73     31,391,483          798,560          468,552       330,008            0
+ 74     31,704,863          750,392          442,952       307,440            0
+ 75     32,018,220          756,872          449,404       307,468            0
+ 76     32,331,422          777,464          461,640       315,824            0
+ 77     32,644,639          773,768          460,480       313,288            0
+ 78     32,957,856          790,392          469,120       321,272            0
+ 79     33,271,107          793,280          473,212       320,068            0
+ 80     33,584,365          794,944          475,812       319,132            0
+ 81     33,897,586          806,848          484,164       322,684            0
+ 82     34,210,803          819,432          494,272       325,160            0
+60.32% (494,272B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.08% (254,664B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->31.08% (254,664B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->31.08% (254,664B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->31.08% (254,664B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->20.00% (163,920B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->20.00% (163,920B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->03.45% (28,296B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.45% (28,296B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->03.45% (28,296B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.23% (26,496B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->03.23% (26,496B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.22% (1,800B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.30% (18,864B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.30% (18,864B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.30% (18,864B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 83     34,524,062          839,328          509,664       329,664            0
+ 84     34,837,325          858,352          522,664       335,688            0
+ 85     35,150,672          870,864          534,436       336,428            0
+ 86     35,463,888          887,352          547,784       339,568            0
+ 87     35,777,235          902,200          556,852       345,348            0
+ 88     36,032,711          943,232          580,016       363,216            0
+61.49% (580,016B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->31.83% (300,240B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->31.83% (300,240B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->31.83% (300,240B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->31.83% (300,240B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->18.36% (173,184B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->18.36% (173,184B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->05.38% (50,736B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->05.16% (48,696B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->05.16% (48,696B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.22% (2,040B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.54% (33,360B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.54% (33,360B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.36% (22,240B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.36% (22,240B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.36% (22,240B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 89     36,345,913          907,984          560,536       347,448            0
+ 90     36,659,223          923,432          572,844       350,588            0
+ 91     36,972,474          936,824          583,248       353,576            0
+ 92     37,284,909          958,968          598,288       360,680            0
+62.39% (598,288B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.99% (325,944B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->33.99% (325,944B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->33.99% (325,944B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->33.99% (325,944B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.81% (170,832B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.81% (170,832B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->04.26% (40,896B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.97% (38,040B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->03.97% (38,040B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.30% (2,856B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.78% (36,216B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.78% (36,216B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.52% (24,144B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.52% (24,144B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.52% (24,144B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 93     37,598,185          957,648          600,136       357,512            0
+ 94     37,770,761          969,584          608,816       360,768            0
+62.79% (608,816B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.78% (337,176B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->34.78% (337,176B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->34.78% (337,176B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->34.78% (337,176B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.49% (169,608B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.49% (169,608B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->04.06% (39,336B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.76% (36,408B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->03.76% (36,408B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.30% (2,928B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.86% (37,464B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.86% (37,464B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.58% (24,976B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.58% (24,976B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.58% (24,976B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 95     38,008,136          987,120          619,792       367,328            0
+62.79% (619,792B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->34.46% (340,200B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->34.46% (340,200B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->34.46% (340,200B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->34.46% (340,200B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.44% (172,200B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.44% (172,200B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->04.47% (44,136B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->04.17% (41,184B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->04.17% (41,184B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.30% (2,952B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.83% (37,800B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.83% (37,800B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.55% (25,200B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.55% (25,200B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.55% (25,200B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.03% (256B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 96     38,139,720        1,003,848          629,056       374,792            0
+62.66% (629,056B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->33.89% (340,200B) 0x402DAE: cdsl_deque_list_lock_based_pthread_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->33.89% (340,200B) 0x402EB8: cdsl_dll_init (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->33.89% (340,200B) 0x4015B5: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     ->33.89% (340,200B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|       
+->17.48% (175,488B) 0x401494: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->17.48% (175,488B) 0x40134C: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->04.99% (50,136B) 0x404114: cdsl_deque_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->04.70% (47,208B) 0x401666: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| | ->04.70% (47,208B) 0x40137A: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| |   
+| ->00.29% (2,928B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.77% (37,800B) 0x40157C: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->03.77% (37,800B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   
+->02.51% (25,200B) 0x401981: cdsl_queue_list_lock_based_pthread_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+| ->02.51% (25,200B) 0x4015DD: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|   ->02.51% (25,200B) 0x401363: main (in /home/stavros/embedded-systems/Exercise 2/drr_SLL_CL_DLL_PK)
+|     
+->00.02% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+

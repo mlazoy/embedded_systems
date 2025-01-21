@@ -1,0 +1,14 @@
+marialazou@mlazoy ex2 % sudo chmod 666 /dev/ttys004
+marialazou@mlazoy ex2 % ./host
+Input a string up to 64-bytes long:
+Hello from host!
+Bytes sent to guest successfully
+Waiting for results...
+The most frequent charachter is: o and it appeared 3 times.
+marialazou@mlazoy ex2 % ./host
+Input a string up to 64-bytes long:
+11111111hmmmm
+Bytes sent to guest successfully
+Waiting for results...
+The most frequent charachter is: 1 and it appeared 8 times.
+marialazou@mlazoy ex2 % 

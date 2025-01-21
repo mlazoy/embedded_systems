@@ -1,0 +1,7 @@
+root@debian-armel:/home/user/outputs# ./cmp_results.sh 
+Files rand_str_input_first.txt_concat_out and rand_str_input_first.txt_concat_out_libc are identical.
+Files rand_str_input_first.txt_len_out and rand_str_input_first.txt_len_out_libc are identical.
+Files rand_str_input_first.txt_sorted_out and rand_str_input_first.txt_sorted_out_libc are identical.
+Files rand_str_input_sec.txt_concat_out and rand_str_input_sec.txt_concat_out_libc are identical.
+Files rand_str_input_sec.txt_len_out and rand_str_input_sec.txt_len_out_libc are identical.
+Files rand_str_input_sec.txt_sorted_out and rand_str_input_sec.txt_sorted_out_libc are identical.

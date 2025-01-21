@@ -1,0 +1,7 @@
+root@debian-armel:/home/user/ex3# make 
+gcc -c string_manipulation.c -o string_manipulation.o -g -Wall -O2
+gcc -c strlen.s -o strlen.o -g -Wall -O2
+gcc -c strcmp.s -o strcmp.o -g -Wall -O2
+gcc -c strcpy.s -o strcpy.o -g -Wall -O2
+gcc -c strcat.s -o strcat.o -g -Wall -O2
+gcc string_manipulation.o strlen.o strcmp.o strcpy.o strcat.o -o string_manipulation.out

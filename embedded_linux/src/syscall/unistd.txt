@@ -1,0 +1,1 @@
+#define __NR_greet                    (__NR_SYSCALL_BASE+386)

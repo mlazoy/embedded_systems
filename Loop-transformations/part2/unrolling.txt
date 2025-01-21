@@ -1,0 +1,6 @@
+Unrolling Factor	system.cpu.numCycles 
+2:	                59826244
+4:	                59637744
+8:	                59476823
+16:	                59381481
+32:	                59249179

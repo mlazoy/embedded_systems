@@ -1,0 +1,1 @@
+mlazoy@mlazoy-vm:~$ linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/bin/arm-linux-gnueabihf-gcc -O0 -Wall -std=gnu11 -o phods_linaro.out /home/mlazoy/Downloads/Lab6/phods.c

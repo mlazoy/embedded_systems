@@ -1,0 +1,319 @@
+--------------------------------------------------------------------------------
+Command:            ./dijkstra ./src/dijkstra/input.dat
+Massif arguments:   (none)
+ms_print arguments: massif.out.2476
+--------------------------------------------------------------------------------
+
+
+    KB
+17.68^             #                                :
+     |             #                                :
+     |             #                                :            ::
+     |             #                                :         :  :
+     |             #                   :            :         :  :
+     |      ::     #             @     :            :      :  :  :
+     |      :      #             @     :  :         :   @  :  :  :      ::
+     |      :      #   :         @     :  :   :  :  ::: @  :  :  :      :
+     |      :    : #@@ :         @   @@:: ::  :  :  ::  @  :  :  :    : :
+     |      :    : #@  :::       @   @ :: ::  :  :  ::  @  :  :  :    : :   :
+     |      :    ::#@  :: @::  : @   @ :: ::  :  :  ::  @  :::::::    : :   :
+     |      : :  ::#@  :: @:   : @:  @ :: ::  :  :  ::  @  :: :: : :  : :   :
+     |      : :  ::#@ ::: @:   : @:  @ :: ::  :  :  ::  @  :: :: : :  : :   ::
+     |      : :  ::#@ ::: @:   : @:  @ :: ::  :  :::::  @@@:: :: : :  ::: ::::
+     |      : :  ::#@ ::: @: ::::@:::@ :::::::::::: :: :@@ :: :: : :::::: : ::
+     |::::::: :::::#@ ::: @: : ::@:: @ :::::: :: :: :: :@@ :: :: : :: ::: : ::
+     |:    :: :: ::#@ ::: @: : ::@:: @ :::::: :: :: :: :@@ :: :: : :: ::: : ::
+     |:    :: :: ::#@ ::: @: : ::@:: @ :::::: :: :: :: :@@ :: :: : :: ::: : ::
+     |:    :: :: ::#@ ::: @: : ::@:: @ :::::: :: :: :: :@@ :: :: : :: ::: : ::
+     |:    :: :: ::#@ ::: @: : ::@:: @ :::::: :: :: :: :@@ :: :: : :: ::: : ::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   80.02
+
+Number of snapshots: 56
+ Detailed snapshots: [8 (peak), 9, 13, 18, 21, 35, 36]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1        138,996            4,592            4,568            24            0
+  2      6,901,658            4,632            4,592            40            0
+  3      7,977,290           13,992           10,208         3,784            0
+  4      9,645,664            8,272            6,776         1,496            0
+  5     11,066,248            5,272            4,976           296            0
+  6     13,142,489           11,584            9,168         2,416            0
+  7     14,160,740            9,304            7,800         1,504            0
+  8     16,107,668           18,104           13,080         5,024            0
+72.25% (13,080B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->41.36% (7,488B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->41.36% (7,488B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->41.36% (7,488B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->28.28% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->28.28% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->28.28% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->22.62% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->22.62% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->22.62% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->22.62% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->22.62% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->05.66% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->05.66% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->05.66% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->05.66% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->05.66% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->05.66% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->05.66% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->05.66% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->05.66% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->02.61% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->02.61% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  9     17,262,125           11,384            9,048         2,336            0
+79.48% (9,048B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.98% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->44.98% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->44.98% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->35.98% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->35.98% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->35.98% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->35.98% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->35.98% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->09.00% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->09.00% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->09.00% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->09.00% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->09.00% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->09.00% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->09.00% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->09.00% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->09.00% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->30.36% (3,456B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->30.36% (3,456B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->30.36% (3,456B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->04.15% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->04.15% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 10     19,101,174            7,264            6,576           688            0
+ 11     20,115,439           11,864            9,336         2,528            0
+ 12     21,801,032           10,824            8,712         2,112            0
+ 13     23,777,949            9,584            7,968         1,616            0
+83.14% (7,968B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->53.42% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->53.42% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->53.42% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->42.74% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->42.74% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->42.74% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->42.74% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->42.74% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->10.68% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->10.68% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->10.68% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->10.68% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->10.68% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->10.68% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->10.68% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->10.68% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->10.68% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->24.79% (2,376B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->24.79% (2,376B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->24.79% (2,376B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->04.92% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->04.92% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 14     25,464,077            9,624            7,992         1,632            0
+ 15     27,293,768            6,104            5,880           224            0
+ 16     29,541,946            9,304            7,800         1,504            0
+ 17     30,954,459            5,664            5,616            48            0
+ 18     32,223,274           14,184           10,728         3,456            0
+75.63% (10,728B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->36.21% (5,136B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->36.21% (5,136B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->36.21% (5,136B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->36.10% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->36.10% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->36.10% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->28.88% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->28.88% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->28.88% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->28.88% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->28.88% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->07.22% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->07.22% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->07.22% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->07.22% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->07.22% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->07.22% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->07.22% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->07.22% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->07.22% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->03.33% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->03.33% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 19     33,769,476            8,344            7,224         1,120            0
+ 20     34,758,820            5,984            5,808           176            0
+ 21     36,452,126           11,624            9,192         2,432            0
+79.08% (9,192B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.05% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->44.05% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->44.05% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->35.24% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->35.24% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->35.24% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->35.24% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->35.24% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->08.81% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->08.81% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->08.81% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->08.81% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->08.81% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->08.81% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->08.81% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->08.81% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->08.81% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->30.97% (3,600B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->30.97% (3,600B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->30.97% (3,600B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->04.06% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->04.06% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 22     38,698,372           15,104           11,280         3,824            0
+ 23     40,248,768           10,984            8,808         2,176            0
+ 24     41,516,077            5,744            5,664            80            0
+ 25     42,920,112           13,544           10,344         3,200            0
+ 26     43,908,314           10,864            8,736         2,128            0
+ 27     45,316,728            5,824            5,712           112            0
+ 28     47,150,083           11,824            9,312         2,512            0
+ 29     48,707,003            6,184            5,928           256            0
+ 30     50,260,687           12,104            9,480         2,624            0
+ 31     52,374,712            6,504            6,120           384            0
+ 32     53,634,560           18,104           13,080         5,024            0
+ 33     54,905,745           12,304            9,600         2,704            0
+ 34     57,155,003            5,824            5,712           112            0
+ 35     58,989,348           12,864            9,936         2,928            0
+77.24% (9,936B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->39.80% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->39.80% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->39.80% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->31.84% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->31.84% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->31.84% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->31.84% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->31.84% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->07.96% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->07.96% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->07.96% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->07.96% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->07.96% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->07.96% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->07.96% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->07.96% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->07.96% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->33.77% (4,344B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->33.77% (4,344B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->33.77% (4,344B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->03.67% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->03.67% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 36     60,397,348            6,624            6,192           432            0
+93.48% (6,192B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->77.29% (5,120B) 0x48EB2E3: _IO_file_doallocate (filedoalloc.c:101)
+| ->77.29% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:374)
+|   ->77.29% (5,120B) 0x48FA713: _IO_doallocbuf (genops.c:369)
+|     ->61.84% (4,096B) 0x48F83F4: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+|     | ->61.84% (4,096B) 0x48FA7C1: _IO_default_uflow (genops.c:389)
+|     |   ->61.84% (4,096B) 0x48D2837: __vfscanf_internal (vfscanf-internal.c:676)
+|     |     ->61.84% (4,096B) 0x48C58AE: __isoc99_fscanf (isoc99_fscanf.c:30)
+|     |       ->61.84% (4,096B) 0x109733: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|     |
+|     ->15.46% (1,024B) 0x48F87A7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+|       ->15.46% (1,024B) 0x48F92C7: _IO_new_file_xsputn (fileops.c:1244)
+|         ->15.46% (1,024B) 0x48F92C7: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+|           ->15.46% (1,024B) 0x48C64C8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+|             ->15.46% (1,024B) 0x48C658B: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+|               ->15.46% (1,024B) 0x48D1FEB: __vfprintf_internal (vfprintf-internal.c:1545)
+|                 ->15.46% (1,024B) 0x48C5C72: printf (printf.c:33)
+|                   ->15.46% (1,024B) 0x109642: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|                     ->15.46% (1,024B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+|
+->09.06% (600B) 0x109280: enqueue (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| ->09.06% (600B) 0x1095EA: dijkstra (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| | ->09.06% (600B) 0x1097C4: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+| |
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+|
+->07.13% (472B) 0x48EBE48: __fopen_internal (iofopen.c:65)
+  ->07.13% (472B) 0x1096FE: main (in /home/stavros/embedded-systems/Exercise 2/dijkstra)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 37     61,944,477           13,584           10,368         3,216            0
+ 38     63,356,403            9,224            7,752         1,472            0
+ 39     65,462,414           15,624           11,592         4,032            0
+ 40     67,148,926            9,624            7,992         1,632            0
+ 41     68,973,476           17,064           12,456         4,608            0
+ 42     71,227,416            8,624            7,392         1,232            0
+ 43     72,784,395            5,864            5,736           128            0
+ 44     74,625,906           11,224            8,952         2,272            0
+ 45     76,029,115            7,064            6,456           608            0
+ 46     77,857,023           13,344           10,224         3,120            0
+ 47     79,963,170            6,664            6,216           448            0
+ 48     82,216,165           10,304            8,400         1,904            0
+ 49     83,064,193            8,104            7,080         1,024            0
+ 50     83,203,329            7,304            6,600           704            0
+ 51     83,344,552            6,864            6,336           528            0
+ 52     83,487,713            7,184            6,528           656            0
+ 53     83,628,829            6,304            6,000           304            0
+ 54     83,769,698            5,824            5,712           112            0
+ 55     83,909,357            4,592            4,568            24            0
+
+ 

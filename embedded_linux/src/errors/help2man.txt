@@ -1,0 +1,3 @@
+checking for help2man... no
+configure: error: missing required tool: help2man
+mlazoy@mlazoy-vm:~/crosstool-ng$ sudo apt install help2man

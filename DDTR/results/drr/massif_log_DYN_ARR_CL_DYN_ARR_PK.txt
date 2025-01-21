@@ -1,0 +1,1077 @@
+--------------------------------------------------------------------------------
+Command:            ./drr_DYN_ARR_CL_DYN_ARR_PK
+Massif arguments:   (none)
+ms_print arguments: massif.out.67890
+--------------------------------------------------------------------------------
+
+
+    MB
+1.075^                                                                       #
+     |                                                                       #
+     |                                                                      @#
+     |                                                                     @@#
+     |                                                                 @:::@@#
+     |                                                            @::::@:::@@#
+     |                                   ::@::::::::::::::::::::::@::::@:::@@#
+     |                                  @: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                                 :@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                                @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                                @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                           : :::@:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                          @:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                      @:::@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                  ::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |                @:::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |            @: :@:::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     |            @:::@:::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     | :    ::::::@:::@:::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+     | :::::::: ::@:::@:::::@: :@:::: @:@: @ ::: :::::: :::: :::::@::::@:::@@#
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   286.3
+
+Number of snapshots: 93
+ Detailed snapshots: [10, 14, 20, 23, 28, 30, 32, 57, 64, 65, 66, 67, 68, 69, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 87, 88, 89, 90, 91, 92 (peak)]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1      4,607,482          112,840           80,428        32,412            0
+  2     11,076,555          108,160           78,088        30,072            0
+  3     17,951,530          101,048           74,548        26,500            0
+  4     22,262,670           97,240           74,324        22,916            0
+  5     27,894,592          164,512          119,456        45,056            0
+  6     31,454,755          162,128          118,280        43,848            0
+  7     35,862,609          158,360          116,396        41,964            0
+  8     42,400,489          150,512          112,540        37,972            0
+  9     47,404,229          150,568          117,072        33,496            0
+ 10     50,513,746          229,416          181,488        47,928            0
+79.11% (181,488B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.11% (105,792B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.11% (105,792B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   ->46.11% (105,792B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|     
+->14.54% (33,360B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->14.54% (33,360B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->13.20% (30,272B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->13.16% (30,184B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->13.16% (30,184B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.04% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.59% (8,232B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.59% (8,232B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.66% (3,808B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.65% (3,776B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.65% (3,776B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 11     55,712,960          228,760          179,216        49,544            0
+ 12     60,269,623          218,960          174,916        44,044            0
+ 13     63,599,459          260,176          205,588        54,588            0
+ 14     67,741,589          321,832          255,740        66,092            0
+79.46% (255,740B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.39% (149,312B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.39% (149,312B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   ->46.39% (149,312B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|     
+->14.08% (45,324B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->14.08% (45,324B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->13.48% (43,384B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->13.45% (43,296B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->13.45% (43,296B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.03% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.67% (11,808B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.67% (11,808B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.83% (5,888B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.82% (5,856B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.82% (5,856B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 15     72,870,228          313,624          252,020        61,604            0
+ 16     75,946,158          382,920          299,440        83,480            0
+ 17     81,167,748          378,944          297,460        81,484            0
+ 18     85,487,550          374,824          295,408        79,416            0
+ 19     88,939,570          370,336          293,164        77,172            0
+ 20     94,275,363          403,584          320,808        82,776            0
+79.49% (320,808B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.38% (195,264B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->48.38% (195,264B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   ->48.38% (195,264B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|     
+->14.99% (60,504B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->14.99% (60,504B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.45% (46,200B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.43% (46,112B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.43% (46,112B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.12% (12,576B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.12% (12,576B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.55% (6,240B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.54% (6,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.54% (6,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 21     98,590,810          397,048          315,512        81,536            0
+ 22    104,973,747          413,576          331,400        82,176            0
+ 23    110,096,062          462,232          373,020        89,212            0
+80.70% (373,020B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->50.08% (231,488B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->50.08% (231,488B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   ->50.08% (231,488B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|     
+->13.29% (61,452B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->13.29% (61,452B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.39% (57,288B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.37% (57,200B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.37% (57,200B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.02% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.37% (15,600B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.37% (15,600B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.55% (7,168B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.54% (7,136B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.54% (7,136B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.01% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 24    113,314,427          507,960          404,232       103,728            0
+ 25    118,230,587          500,264          400,392        99,872            0
+ 26    123,616,051          528,808          418,824       109,984            0
+ 27    128,506,858          530,384          422,720       107,664            0
+ 28    134,724,567          670,632          533,184       137,448            0
+79.50% (533,184B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->48.11% (322,624B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->48.11% (322,624B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   ->48.11% (322,624B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|     
+->14.77% (99,072B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->14.77% (99,072B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.86% (79,552B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.85% (79,464B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.85% (79,464B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.23% (21,672B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.23% (21,672B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.53% (10,240B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.52% (10,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.52% (10,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (32B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 29    139,596,515          713,344          556,576       156,768            0
+ 30    143,749,280          760,920          587,560       173,360            0
+77.22% (587,560B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.83% (341,120B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->44.82% (341,056B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->44.82% (341,056B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.71% (134,760B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.71% (134,760B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.48% (79,728B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.47% (79,640B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.47% (79,640B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.85% (21,720B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.85% (21,720B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.34% (10,208B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.34% (10,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.34% (10,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 31    148,007,453          799,848          616,252       183,596            0
+ 32    154,511,990          835,872          638,352       197,520            0
+76.37% (638,352B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->44.00% (367,744B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->43.99% (367,680B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->43.99% (367,680B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->19.01% (158,928B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->19.01% (158,928B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.54% (79,728B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.53% (79,640B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.53% (79,640B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.60% (21,720B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.60% (21,720B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.22% (10,208B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.22% (10,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.22% (10,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 33    158,115,478          835,080          637,956       197,124            0
+ 34    163,482,497          833,904          637,368       196,536            0
+ 35    167,099,315          833,088          636,960       196,128            0
+ 36    170,628,277          832,272          636,552       195,720            0
+ 37    174,269,065          831,408          636,120       195,288            0
+ 38    179,641,190          830,072          635,460       194,612            0
+ 39    185,057,288          828,680          634,764       193,916            0
+ 40    188,643,568          827,720          634,284       193,436            0
+ 41    194,047,768          826,280          633,564       192,716            0
+ 42    199,465,388          824,672          632,760       191,912            0
+ 43    203,062,204          823,544          632,196       191,348            0
+ 44    210,160,601          821,312          631,080       190,232            0
+ 45    213,745,776          819,992          630,420       189,572            0
+ 46    217,336,103          818,576          629,712       188,864            0
+ 47    220,877,774          817,064          628,956       188,108            0
+ 48    224,435,251          815,552          628,200       187,352            0
+ 49    229,754,575          812,824          626,844       185,980            0
+ 50    232,868,737          811,192          626,028       185,164            0
+ 51    235,962,567          809,152          625,008       184,144            0
+ 52    239,046,813          806,760          623,820       182,940            0
+ 53    242,125,491          804,120          622,568       181,552            0
+ 54    245,204,909          799,536          620,276       179,260            0
+ 55    248,283,357          793,448          618,428       175,020            0
+ 56    251,365,291          834,456          647,444       187,012            0
+ 57    252,249,949          862,320          669,564       192,756            0
+77.65% (669,564B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.47% (400,704B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.46% (400,640B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.46% (400,640B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.71% (152,700B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.71% (152,700B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.61% (82,896B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.60% (82,808B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.60% (82,808B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.62% (22,584B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.62% (22,584B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.24% (10,656B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.24% (10,656B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.24% (10,656B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 58    255,348,298          869,128          670,916       198,212            0
+ 59    258,448,468          866,976          669,848       197,128            0
+ 60    261,535,540          864,440          668,588       195,852            0
+ 61    264,622,720          861,200          666,968       194,232            0
+ 62    267,701,878          856,808          664,772       192,036            0
+ 63    270,780,254          846,872          659,804       187,068            0
+ 64    273,053,376          872,944          680,580       192,364            0
+77.96% (680,580B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.02% (410,496B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->47.02% (410,432B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->47.02% (410,432B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.32% (151,236B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.32% (151,236B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.72% (84,832B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.71% (84,744B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.71% (84,744B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.65% (23,112B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.65% (23,112B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.25% (10,880B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.25% (10,880B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.25% (10,880B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 65    274,342,844          881,720          687,156       194,564            0
+77.93% (687,156B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.94% (413,888B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.93% (413,824B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.93% (413,824B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.33% (152,820B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.33% (152,820B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.76% (86,064B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.75% (85,976B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.75% (85,976B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.66% (23,448B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.66% (23,448B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.24% (10,912B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.24% (10,912B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.24% (10,912B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 66    274,464,282          890,696          694,204       196,492            0
+77.94% (694,204B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.93% (417,984B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.92% (417,920B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.92% (417,920B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.31% (154,188B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.31% (154,188B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.79% (87,208B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.78% (87,120B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.78% (87,120B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.67% (23,760B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.67% (23,760B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.24% (11,040B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.24% (11,040B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.24% (11,040B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 67    274,592,352          909,144          708,028       201,116            0
+77.88% (708,028B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.99% (427,200B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.98% (427,136B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.98% (427,136B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.47% (158,796B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.47% (158,796B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.59% (87,208B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.58% (87,120B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.58% (87,120B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.61% (23,760B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.61% (23,760B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.21% (11,040B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.21% (11,040B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.21% (11,040B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 68    275,002,004          919,848          714,424       205,424            0
+77.67% (714,424B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.67% (429,248B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.66% (429,184B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.66% (429,184B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.72% (163,032B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.72% (163,032B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.49% (87,296B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.48% (87,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.48% (87,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.59% (23,784B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.59% (23,784B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.20% (11,040B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.20% (11,040B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.20% (11,040B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 69    275,087,351          932,152          723,640       208,512            0
+77.63% (723,640B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.71% (435,392B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.70% (435,328B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.70% (435,328B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.82% (166,104B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.82% (166,104B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.36% (87,296B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.36% (87,208B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.36% (87,208B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.55% (23,784B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.55% (23,784B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.18% (11,040B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.18% (11,040B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.18% (11,040B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 70    278,183,338          937,600          724,344       213,256            0
+ 71    281,265,111          935,008          723,048       211,960            0
+ 72    284,353,071          931,488          721,296       210,192            0
+ 73    287,433,251          925,872          718,488       207,384            0
+ 74    290,433,516          941,624          734,368       207,256            0
+77.99% (734,368B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.91% (441,728B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.90% (441,664B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.90% (441,664B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.20% (161,952B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.20% (161,952B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.92% (93,456B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.92% (93,368B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.92% (93,368B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (25,464B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.70% (25,464B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.25% (11,744B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.25% (11,744B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.25% (11,744B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 75    290,787,437          953,264          743,764       209,500            0
+78.02% (743,764B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.00% (448,000B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.99% (447,936B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.99% (447,936B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.17% (163,668B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.17% (163,668B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->09.91% (94,512B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->09.91% (94,424B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->09.91% (94,424B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.70% (25,752B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.70% (25,752B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.24% (11,808B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.24% (11,808B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.24% (11,808B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 76    291,507,620          962,952          751,244       211,708            0
+78.01% (751,244B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.88% (451,392B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.87% (451,328B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.87% (451,328B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->17.12% (164,844B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->17.12% (164,844B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.03% (96,624B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.03% (96,536B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.03% (96,536B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.73% (26,328B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.73% (26,328B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.25% (12,032B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.25% (12,032B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.25% (12,032B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 77    292,367,672          972,712          760,604       212,108            0
+78.19% (760,604B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.05% (457,664B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->47.04% (457,600B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->47.04% (457,600B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.83% (163,692B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.83% (163,692B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.25% (99,704B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.24% (99,616B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.24% (99,616B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.79% (27,168B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.79% (27,168B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.27% (12,352B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.27% (12,352B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.27% (12,352B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 78    292,746,901          983,056          769,220       213,836            0
+78.25% (769,220B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->47.01% (462,144B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->47.00% (462,080B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->47.00% (462,080B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.70% (164,196B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.70% (164,196B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.40% (102,256B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.39% (102,168B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.39% (102,168B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.83% (27,864B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.83% (27,864B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.30% (12,736B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.30% (12,736B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.30% (12,736B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 79    293,189,949          993,016          777,928       215,088            0
+78.34% (777,928B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.87% (465,472B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.87% (465,408B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.87% (465,408B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.47% (163,560B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.47% (163,560B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.72% (106,480B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.71% (106,392B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.71% (106,392B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.92% (29,016B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.92% (29,016B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.35% (13,376B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.35% (13,376B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.35% (13,376B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 80    293,440,423        1,003,216          786,448       216,768            0
+78.39% (786,448B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.73% (468,800B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.72% (468,736B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.72% (468,736B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.32% (163,680B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.32% (163,680B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->10.96% (109,912B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->10.95% (109,824B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->10.95% (109,824B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->02.99% (29,952B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->02.99% (29,952B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.40% (14,080B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.40% (14,080B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.40% (14,080B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 81    293,768,994        1,013,328          795,040       218,288            0
+78.46% (795,040B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.69% (473,152B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.69% (473,088B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.69% (473,088B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.17% (163,824B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.17% (163,824B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.14% (112,904B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.13% (112,816B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.13% (112,816B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.04% (30,768B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.04% (30,768B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.42% (14,368B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.42% (14,368B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.42% (14,368B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 82    293,981,481        1,023,536          803,360       220,176            0
+78.49% (803,360B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.50% (475,904B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.49% (475,840B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.49% (475,840B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.03% (164,064B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.03% (164,064B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.38% (116,512B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.37% (116,424B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.37% (116,424B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.10% (31,752B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.10% (31,752B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.48% (15,104B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.48% (15,104B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.48% (15,104B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 83    294,238,036        1,033,880          812,100       221,780            0
+78.55% (812,100B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.33% (479,040B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.33% (478,976B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.33% (478,976B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.84% (163,812B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.84% (163,812B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.66% (120,560B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.65% (120,472B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.65% (120,472B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (32,856B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.18% (32,856B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.53% (15,808B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.53% (15,808B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.53% (15,808B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 84    294,901,818        1,047,232          822,872       224,360            0
+78.58% (822,872B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.39% (485,760B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.38% (485,696B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.38% (485,696B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.81% (165,576B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.81% (165,576B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.67% (122,232B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.66% (122,144B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.66% (122,144B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.18% (33,312B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.18% (33,312B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.52% (15,968B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.52% (15,968B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.52% (15,968B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 85    295,176,102        1,059,488          831,052       228,436            0
+78.44% (831,052B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.24% (489,856B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.23% (489,792B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.23% (489,792B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->16.00% (169,548B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->16.00% (169,548B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.55% (122,320B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.54% (122,232B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.54% (122,232B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.15% (33,336B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.15% (33,336B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.51% (15,968B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.51% (15,968B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.51% (15,968B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 86    298,252,431        1,068,864          840,180       228,684            0
+ 87    298,267,742        1,070,088          841,112       228,976            0
+78.60% (841,112B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.27% (495,168B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.27% (495,104B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.27% (495,104B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.72% (168,264B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.72% (168,264B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->11.82% (126,456B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->11.81% (126,368B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->11.81% (126,368B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.22% (34,464B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.22% (34,464B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.56% (16,736B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.56% (16,736B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.56% (16,736B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 88    298,631,696        1,080,840          850,272       230,568            0
+78.67% (850,272B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.18% (499,136B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.17% (499,072B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.17% (499,072B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.56% (168,192B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.56% (168,192B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.03% (130,064B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.03% (129,976B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.03% (129,976B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.28% (35,448B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.28% (35,448B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.61% (17,408B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.61% (17,408B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.61% (17,408B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 89    298,893,399        1,091,864          859,420       232,444            0
+78.71% (859,420B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.15% (503,936B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.15% (503,872B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.15% (503,872B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.46% (168,780B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.46% (168,780B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.16% (132,792B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.15% (132,704B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.15% (132,704B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.31% (36,192B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.31% (36,192B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.62% (17,696B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.62% (17,696B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.62% (17,696B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 90    299,644,295        1,102,920          869,064       233,856            0
+78.80% (869,064B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.13% (508,736B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.12% (508,672B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.12% (508,672B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.28% (168,504B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.28% (168,504B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.38% (136,488B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.37% (136,400B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.37% (136,400B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.37% (37,200B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.37% (37,200B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.64% (18,112B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.64% (18,112B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.64% (18,112B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 91    299,929,982        1,115,712          879,324       236,388            0
+78.81% (879,324B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.13% (514,624B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.12% (514,560B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.12% (514,560B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.24% (170,076B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.24% (170,076B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.41% (138,512B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.41% (138,424B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.41% (138,424B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.38% (37,752B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.38% (37,752B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.64% (18,336B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.64% (18,336B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.64% (18,336B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 92    300,221,752        1,126,928          887,520       239,408            0
+78.76% (887,520B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->46.12% (519,744B) 0x401872: cdsl_dyn_array_enqueue (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->46.11% (519,680B) 0x401524: insert_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->46.11% (519,680B) 0x40124A: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (64B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->15.36% (173,040B) 0x40135B: get_next_packet (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->15.36% (173,040B) 0x40121C: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->12.30% (138,600B) 0x401706: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->12.29% (138,512B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->12.29% (138,512B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.01% (88B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->03.35% (37,776B) 0x40143A: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->03.35% (37,776B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+|   
+->01.63% (18,336B) 0x401735: cdsl_dyn_array_init (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| ->01.63% (18,336B) 0x401473: find_node (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| | ->01.63% (18,336B) 0x401233: main (in /home/stavros/embedded-systems/Exercise 2/drr_DYN_ARR_CL_DYN_ARR_PK)
+| |   
+| ->00.00% (0B) in 1+ places, all below ms_print's threshold (01.00%)
+| 
+->00.00% (24B) in 1+ places, all below ms_print's threshold (01.00%)
+

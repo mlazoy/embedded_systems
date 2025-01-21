@@ -1,0 +1,19 @@
+mlazoy@mlazoy-vm:~/linux-source-3.16$ dpkg -I ../linux-headers-3.16.84_3.16.84-6_armhf.deb
+ new Debian package, version 2.0.
+ size 6753290 bytes: control archive=199564 bytes.
+     449 bytes,    14 lines      control              
+  954326 bytes, 10078 lines      md5sums              
+ Package: linux-headers-3.16.84
+ Source: linux-upstream
+ Version: 3.16.84-6
+ Architecture: armhf
+ Maintainer: Anonymous <root@mlazoy-vm>
+ Installed-Size: 42367
+ Provides: linux-headers, linux-headers-2.6
+ Section: kernel
+ Priority: optional
+ Homepage: http://www.kernel.org/
+ Description: Linux kernel headers for 3.16.84 on armhf
+  This package provides kernel header files for 3.16.84 on armhf
+  .
+  This is useful for people who need to build external modules

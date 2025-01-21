@@ -1,0 +1,1 @@
+mlazoy@mlazoy-vm:~$ ~/x-tools/arm-cortexa9_neon-linux-gnueabihf/bin/arm-cortexa9_neon-linux-gnueabihf-gcc -O0 -Wall -o phods_crosstool.out /home/mlazoy/Downloads/Lab6/phods.c

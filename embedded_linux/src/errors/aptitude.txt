@@ -1,0 +1,4 @@
+root@debian-armhf:~# apt-get install aptitude
+root@debian-armhf:~# aptitude install zstd
+root@debian-armhf:~# aptitude install bzip2
+

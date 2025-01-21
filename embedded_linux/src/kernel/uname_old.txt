@@ -1,0 +1,2 @@
+root@debian-armhf:/home/user# uname -a
+Linux debian-armhf 3.2.0-4-vexpress #1 SMP Debian 3.2.51-1 armv7l GNU/Linux
